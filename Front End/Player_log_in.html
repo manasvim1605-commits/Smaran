@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Log In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-box" style="text-align: left;">
+
+        <h1>Player Log In</h1>
+
+        <h2>Enter your details</h2>
+
+        <div style="margin-bottom: 20px;">
+            <label>Player Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label>
+                <input type="radio" name="loginType" value="email" onclick="showEmail()">
+                Email
+            </label>
+
+            <div id="emailField" style="display: none; margin-top: 10px;">
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label>
+                <input type="radio" name="loginType" value="phone" onclick="showPhone()">
+                Phone Number
+            </label>
+
+            <div id="phoneField" style="display: none; margin-top: 10px;">
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="button" onclick="playerLogin()">Login</button>
+
+    </div>
+
+    <script src="Player_log_in.js"></script>
+
+</body>
+</html>

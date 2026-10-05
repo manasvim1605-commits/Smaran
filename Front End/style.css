@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f7ef;
+    margin: 0;
+    padding-top: 80px;
+    color: #29483c;
+}
+
+.login-box {
+    width: 430px;
+    font-weight: bold;
+    margin: auto;
+    background-color: #fffdf7;
+    padding: 45px;
+    border-radius: 20px;
+    border: 2px solid #c8e6d5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    color: #28745b;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #52665d;
+    margin-bottom: 35px;
+}
+
+/* Radio Options */
+
+.role-option {
+    display: flex; /*to display everthing on one single line*/
+    align-items: center;
+    width: 300px;
+    margin: 25px auto; /*auto is used for centre*/
+    font-size: 23px;
+    font-weight: bold;
+    color: #315548;
+    cursor: pointer;
+}
+
+/* Radio Button */
+
+.role-option input {
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* Continue Button */
+
+button {
+    width: 90%;
+    padding: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b9b78;
+    border-radius: 14px;
+    cursor: pointer;
+}
