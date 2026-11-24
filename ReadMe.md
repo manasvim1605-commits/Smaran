@@ -16,10 +16,11 @@ SMARAN is a memory-support application designed to engage users through interact
 ## Technologies Used
 
 - HTML
-- Flask
 - CSS
-- JavaScript
-- JSON
+- JavaScript (Handles interactions and sends requests)
+- Flask (Processes requests and application logic)
+- REST API+JSON (Transfers data between frontend and backend)
+- MySQL (Stores and retrieves information)
 
 ## Development
 
