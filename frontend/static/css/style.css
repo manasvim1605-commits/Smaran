@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap');
+
+:root {
+    --green: #344D18;
+    --green-dark: #263B12;
+    --green-light: #526B32;
+    --ivory: #F7F1E5;
+    --cream: #FBF8F1;
+    --gold: #B88A32;
+    --gold-light: #D8B96D;
+    --text: #302E27;
+    --muted: #68665D;
+    --white: #FFFFFF;
+    --border: #DED7C8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--ivory);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+.login-layout {
+    width: 100%;
+    max-width: 1180px;
+    min-height: 690px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--cream);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 55px rgba(47, 52, 29, 0.12);
+}
+
+/* LEFT WELCOME PANEL */
+
+.welcome-panel {
+    position: relative;
+    overflow: hidden;
+    background: var(--green);
+    color: var(--ivory);
+    padding: 55px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-family: 'Lora', serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--ivory);
+}
+
+.brand-subtitle {
+    color: var(--gold-light);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 440px;
+}
+
+.welcome-content h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.welcome-content h1 span {
+    color: var(--gold-light);
+}
+
+.welcome-content p {
+    color: #F0EBDD;
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 390px;
+}
+
+.welcome-note {
+    position: relative;
+    z-index: 2;
+    color: #E9E3D5;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ARCH AND FLORAL DECORATION */
+
+.arch-decoration {
+    position: absolute;
+    width: 310px;
+    height: 370px;
+    right: -65px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid rgba(216, 185, 109, 0.55);
+    border-bottom: none;
+    border-radius: 160px 160px 0 0;
+    opacity: 0.75;
+}
+
+.arch-decoration::before {
+    content: "";
+    position: absolute;
+    inset: 18px 18px 0;
+    border: 1px solid rgba(216, 185, 109, 0.4);
+    border-bottom: none;
+    border-radius: 145px 145px 0 0;
+}
+
+.arch-flower {
+    position: absolute;
+    right: 65px;
+    top: 37%;
+    font-size: 105px;
+    color: var(--gold-light);
+    opacity: 0.9;
+    transform: rotate(-12deg);
+}
+
+/* RIGHT LOGIN PANEL */
+
+.form-panel {
+    background: var(--cream);
+    padding: 65px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading {
+    margin-bottom: 35px;
+}
+
+.form-heading .eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.form-heading h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+}
+
+.form-heading p {
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.form-group input {
+    width: 100%;
+    min-height: 58px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    padding: 14px 17px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #77746B;
+    opacity: 1;
+}
+
+.form-group input:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(52, 77, 24, 0.12);
+}
+
+.primary-button {
+    width: 100%;
+    min-height: 60px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: var(--green);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+    background: var(--green-dark);
+    transform: translateY(-1px);
+}
+
+.form-footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.form-footer a {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 16px;
+    text-align: center;
+}
+
+.back-home:hover {
+    color: var(--green);
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+    .page-wrapper {
+        padding: 20px;
+    }
+
+    .login-layout {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+    }
+
+    .welcome-panel {
+        min-height: 300px;
+        padding: 35px;
+    }
+
+    .welcome-content {
+        margin-top: 45px;
+    }
+
+    .welcome-content h1 {
+        font-size: 35px;
+    }
+
+    .welcome-content p {
+        font-size: 17px;
+    }
+
+    .arch-decoration {
+        width: 190px;
+        height: 230px;
+        right: -65px;
+        top: 55%;
+    }
+
+    .arch-flower {
+        right: 30px;
+        font-size: 65px;
+    }
+
+    .form-panel {
+        padding: 42px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 17px;
+    }
+
+    .page-wrapper {
+        padding: 12px;
+    }
+
+    .login-layout {
+        border-radius: 16px;
+    }
+
+    .welcome-panel {
+        min-height: 275px;
+        padding: 27px;
+    }
+
+    .welcome-content h1 {
+        font-size: 30px;
+    }
+
+    .welcome-content p {
+        font-size: 16px;
+    }
+
+    .form-panel {
+        padding: 35px 25px;
+    }
+
+    .form-heading h2 {
+        font-size: 30px;
+    }
+}
