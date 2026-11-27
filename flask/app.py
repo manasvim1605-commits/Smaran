@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, jsonify, session, redirect, url_for
 
 from routes.caregiver import caregiver_bp
