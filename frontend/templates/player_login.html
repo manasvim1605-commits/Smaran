@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Login | SMARAN</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <main class="login-layout">
+
+        <section class="welcome-panel">
+
+            <div>
+                <div class="brand-name">SMARAN</div>
+                <div class="brand-subtitle">EVERY MIND HAS A STORY</div>
+            </div>
+
+            <div class="welcome-content">
+                <h1>Every moment is a chance to <span>begin again.</span></h1>
+
+                <p>
+                    Explore enjoyable activities, discover little
+                    challenges and celebrate every achievement.
+                </p>
+            </div>
+
+            <div class="welcome-note">
+                Take your time. Enjoy the journey. Every step counts.
+            </div>
+
+            <div class="arch-decoration"></div>
+            <div class="arch-flower">✿</div>
+
+        </section>
+
+
+        <section class="form-panel">
+
+            <div class="form-heading">
+                <div class="eyebrow">Player Access</div>
+                <h2>Welcome back</h2>
+                <p>Sign in and continue your journey with SMARAN.</p>
+            </div>
+
+            <form id="playerLoginForm">
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Sign In
+                </button>
+
+                <div id="message" class="message"></div>
+
+            </form>
+
+            <div class="form-footer">
+                New to SMARAN?
+                <a href="/player/register">Create an account</a>
+                <br>
+                <a href="/caregiver/login">Sign in as a Caregiver</a>
+            </div>
+
+            <a href="/" class="back-home">← Back to Home</a>
+
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
