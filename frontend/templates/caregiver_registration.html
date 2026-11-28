@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caregiver Registration | SMARAN</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <main class="login-layout">
+
+        <section class="welcome-panel">
+
+            <div>
+                <div class="brand-name">SMARAN</div>
+                <div class="brand-subtitle">EVERY MIND HAS A STORY</div>
+            </div>
+
+            <div class="welcome-content">
+                <h1>Care begins with <span>a connection.</span></h1>
+
+                <p>
+                    Create your account and be part of a space
+                    that encourages meaningful moments,
+                    activities and everyday connections.
+                </p>
+            </div>
+
+            <div class="welcome-note">
+                Rooted in care. Inspired by memories.
+            </div>
+
+            <div class="arch-decoration"></div>
+            <div class="arch-flower">✿</div>
+
+        </section>
+
+
+        <section class="form-panel">
+
+            <div class="form-heading">
+                <div class="eyebrow">Caregiver Registration</div>
+                <h2>Create Account</h2>
+                <p>Enter your details to get started with SMARAN.</p>
+            </div>
+
+            <form id="caregiverRegisterForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Create Account
+                </button>
+
+                <div id="message" class="message"></div>
+
+            </form>
+
+            <div class="form-footer">
+                Already have an account?
+                <a href="/caregiver-login">Sign In</a>
+            </div>
+
+            <a href="/" class="back-home">← Back to Home</a>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
